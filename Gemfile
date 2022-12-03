@@ -35,7 +35,21 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
+gem "importmap-rails"
 
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+gem "turbo-rails"
+
+#rails serializer gem
+
+group :development do
+  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
+  # gem "spring"
+  gem "active_model_serializers"
+  # gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
+end
+# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+gem "stimulus-rails"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
